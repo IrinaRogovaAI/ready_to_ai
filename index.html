@@ -457,12 +457,14 @@
         }
 
         .container {
-            max-width: 900px;
+            width: 100%;
+	    max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             overflow: hidden;
+	    padding: 0 15px;
         }
 
         .header {
@@ -900,6 +902,29 @@
                 grid-template-columns: 1fr;
             }
         }
+	@media (max-width: 768px) {
+    	    body {
+               padding: 10px;
+    	    }
+
+           .content {
+              padding: 20px;
+    	    }
+
+          .intro-section ul {
+      	      padding: 20px;
+    	    }
+
+          .question {
+             padding: 20px;
+    	    }
+
+         .btn {
+            width: 100%;
+            max-width: none;
+         }
+}
+
     </style>
 </head>
 <body>
